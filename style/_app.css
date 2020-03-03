@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:300,400,700);
+
+:not(.no-transition) {
+	transition: .1s ease-out;
+	transition-property: background, color, opacity, border, border-radius, box-shadow, transform, max-width, max-height;
+}
+
+html, body {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+body {
+    position: relative;
+	background: #093D84 url(../img/bg/tile.jpg);
+	background-attachment: fixed;
+	color: #FFF;
+}
+
+h1 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+h2 {
+	font-weight: 300;
+	letter-spacing: 4px;
+}
+
+h3 {
+	font-weight: 300;
+	text-transform: lowercase;
+	letter-spacing: 3px;
+}
+
+h4 {
+	font-weight: 300;
+	text-transform: lowercase;
+	letter-spacing: 2px;
+}
+
+h5 {
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+a {
+	cursor: pointer;
+}
+
+textarea {
+	resize: none;
+}
+
+emph, .text-emph {
+	font-weight: normal;
+	color: #00894E;
+}
+
+hr {
+	border-color: #333;
+}
+
+.jumbotron {
+	/*background: #071867;*/
+	/*background: linear-gradient(to right, #071867 0%, #3B56D4 45%, #3B56D4 55%, #071867 100%);*/
+	margin-bottom: 0;
+	/*text-shadow: 0 0 16px #000;*/
+	background: #093D84 url(../img/bg/starfield.jpg);/********/
+	background-attachment: fixed;
+}
+
+.btn:disabled {
+	cursor: default !important;
+}
+
+.list-group-item {
+	padding: 14px;
+}
+
+.list-group-item-heading {
+	text-transform: none;
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+
+.line-emph {
+	border-color: #53E0A4 !important;
+}
+
+.line-divider {
+	height: 24px;
+}
+
+.line-divider-dark {
+	background: #FF8C5E;
+}
+
+.line-divider-light {
+	background: #5F90DD;
+}
+
+.info-region {
+	/*background: #050505;*/
+	border-top: 16px solid #3571D1;
+}
+
+.topbar {
+	z-index: 5;
+	background: #111;
+	box-shadow: 0 5px 5px #111;
+}
+
+.contact-region {
+	z-index: 10;
+	position: relative;
+	background: #093984;
+	color: #FFF;
+}
+
+.contact-region > div > hr {
+	border-color: #64DDD0;
+}
+
+.contact-region label {
+	font-weight: 300;
+	font-size: 32px;
+}
+
+.contact-image {
+	transition: .35s ease-out;
+	margin-top: 10px;
+	width: 100%;
+	border-radius: 50%;
+}
+
+.contact-region:hover .contact-image {
+	transition: .3s ease-out;
+	border-radius: 0;
+}
+
+.mouse-guide {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #5F90DD;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.sticky-top {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.sticky-top.attached {
+	position: fixed;
+	top: 0;
+}
+
+.page-height {
+	min-height: 100vh;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.service-panel {
+	transition-duration: .4s;
+}
+
+.service-panel:hover {
+	transition-duration: .3s;
+	background: rgba(240, 240, 240, .5);
+}
+
+.service-panel.selected {
+	background: #CDFBE7;
+	z-index: 1;
+}
+
+.service-panel-left {
+	text-align: left;
+}
+
+.service-panel-left:hover {
+	transform: translateX(10px);
+}
+
+.service-panel-right {
+	text-align: right;
+}
+
+.service-panel-right:hover {
+	transform: translateX(-10px);
+}
+
+.service-region {
+	border: 5px solid transparent;
+	border-left: 16px solid #CDFBE7;
+	border-right: 16px solid #CDFBE7;
+}
+
+::selection {
+	background: #444;
+	color: #EEE;
+}
+
+.noselect {
+	cursor: default;
+}
+
+.noselect::selection, .noselect ::selection {
+	background: inherit;
+	color: inherit;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+	background: #AAB;
+}
+ 
+::-webkit-scrollbar-thumb {
+	background: #778;
+}
+ 
+::-webkit-scrollbar-thumb:HOVER {
+	background: #667;
+}
